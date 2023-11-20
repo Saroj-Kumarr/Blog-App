@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-require("dotenv").config();
+require("dotenv").config(); 
 
 const dbConnect = () => {
   mongoose
@@ -8,9 +8,9 @@ const dbConnect = () => {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     })
-    .then(console.log("DB connected "))
+    .then(console.log("DB connected ✅"))
     .catch((error) => {
-      console.log("DB Issue");
+      console.log("DB Issue ❌");
       console.log(error);
       process.exit(1);
     });

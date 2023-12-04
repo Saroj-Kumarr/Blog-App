@@ -9,9 +9,9 @@ const blog = require("./routes/blog.js");
 
 app.use("/api/v1", blog);
 
-const connectWithDB = require("./config/database.js");
+const dbConnect = require("./config/database.js");
 
-connectWithDB();
+dbConnect();
 
 app.listen(8000, () => {
   console.log("Server is started on 8000");
